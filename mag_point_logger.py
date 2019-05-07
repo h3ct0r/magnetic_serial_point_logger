@@ -209,7 +209,7 @@ class LoggerForm(npyscreen.FormBaseNew):
                                          relx=1
                                          )
 
-        self.mag = MagPoller(device=self.parentApp.usb_device, is_continuous=True, fake_test_data=True, debug=False)
+        self.mag = MagPoller(device=self.parentApp.usb_device, is_continuous=True, fake_test_data=False, debug=False)
         self.mag.start()
         time.sleep(1)
 
